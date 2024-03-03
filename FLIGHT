@@ -1,0 +1,51 @@
+  insert into avion values (100,'airbus',300,'RABAT'),
+  (101,'B373',250,'casa'),(101,'737',200,'RABAT');
+  
+   
+  
+  SELECT * FROM AVION
+  ORDER BY NOM ASC ;
+  
+  SELECT DISTINCT Nom ,capacite 
+  from avion ;
+  
+  4// select distinct localite from avion ;
+  
+  5// select * from avion 
+  where localite='rabat' or localite='casa' ;
+  
+  update avion
+  set capacite=220
+  where ID_A=101;
+  
+  
+  delete from avion
+  where capacite>200;
+  
+  select min(capacite)
+  from avion ;
+  
+  select max(capacite)
+  from avion;
+  
+  select avg(capacite)
+  from avion;
+  
+  
+  select * from avion
+  where capacite=220;
+  
+  10/// select * from avion
+  where capacite >= (select avg(capacite)
+  from avion );
+  
+  
+  14// select distinct nom from pilote
+  where avion_nom='airbus'
+   
+  
+  
+  
+  
+  
+
